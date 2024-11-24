@@ -1,0 +1,88 @@
+/* AllItems */
+.tablesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 3vw;
+    overflow-y: scroll;
+    margin-bottom: 5rem;
+    height: 500px;
+}
+
+.table{
+    flex: 1;
+    border-collapse: collapse;
+    width: 100%;
+    height: fit-content;
+    overflow-y: scroll;
+}
+.table td,th{
+    text-align: left;
+    padding: 1rem;
+}
+.table thead tr{
+    background-color: rgb(44, 43, 44);
+}
+.table tbody tr td button{
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(44, 43, 44);
+    width: vw;
+}
+
+.buttonsTd{
+    display: flex;
+    gap: .5rem;
+}
+
+/* NewItem */
+.inputs{
+    display: grid;
+    grid-template-areas: 
+    "name inStock price category"
+    "description description description description";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.inputs div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: .4rem;
+    place-content: center;
+}
+.inputs input, textarea, select{
+    padding: .3rem;
+}
+
+.nameInput{
+    grid-area: name;
+}
+.nameInput input{
+    border: 1px solid rgb(145, 145, 145);
+    background-color: rgb(59,59,59);
+}
+
+.inStockInput{
+    grid-area: inStock;
+}
+
+.priceInput{
+    grid-area: price;
+}
+
+.categoryInput{
+    grid-area: category;
+}
+
+.descriptionTextArea{
+    grid-area: description;
+}
+
+.formButton{
+    margin: 2rem 1rem;
+    background-color: lightblue;
+    border-radius: 8px;
+    color: black;
+}

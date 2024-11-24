@@ -1,0 +1,40 @@
+.nameDiv{
+    margin: 4rem auto 3rem auto;
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+.nameDiv h3{
+    font-weight: 400;
+    line-height: 10px;
+}
+.nameDiv button{
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.attBtn{
+    background-color: white;
+    color: black;
+}
+
+.deleteBtn{
+    background-color: rgb(255,83,89);
+    color: black;
+}
+
+.infoDiv{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.infoDiv div{
+    background-color: rgb(87, 86, 86);
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.dateDiv{
+    display: flex;
+    gap: 2rem;
+}
