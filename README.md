@@ -32,3 +32,12 @@ Update Item:
 * Javascript
 * CSS
 * Bootstrap
+
+## How To Use It
+Make sure you have Node.js and npm already installed.
+
+Step-by-step guide:
+* git clone https://github.com/BernardoCerqueira/stockManager
+* cd stockManager
+* npm install
+* npm run dev
