@@ -37,20 +37,22 @@ export default function Item(){
         <>
             <h1 style={{fontWeight: 200}}>Stock Items</h1>
             <div className={styles.nameDiv}>
-                <h3>{item.name}</h3>
-                <Link to={`/updateItem/${itemId}`}>
+                <section><h3>{item.name}</h3></section>
+                <div className={styles.buttonsDiv}>
+                    <Link to={`/updateItem/${itemId}`}>
+                        <button
+                            className={styles.attBtn}
+                            >
+                                Atualizar
+                        </button>
+                    </Link>
                     <button
-                        className={styles.attBtn}
+                        className={styles.deleteBtn}
+                        onClick={() => deleteItem(item.id, removeItem)}
                         >
-                            Atualizar
+                            Excluir
                     </button>
-                </Link>
-                <button
-                    className={styles.deleteBtn}
-                    onClick={() => deleteItem(item.id, removeItem)}
-                    >
-                        Excluir
-                </button>
+                </div>
             </div>
             <div className={styles.infoDiv}>
                 <div>Categoria: {item.category}</div>

@@ -4,13 +4,19 @@
     place-items: center;
     gap: 1rem;
 }
-.nameDiv h3{
+.nameDiv section h3{
     font-weight: 400;
-    line-height: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .nameDiv button{
     border-radius: 8px;
     font-size: 15px;
+}
+
+.buttonsDiv{
+    display: flex;
+    gap: 1rem;
 }
 
 .attBtn{
@@ -37,4 +43,29 @@
 .dateDiv{
     display: flex;
     gap: 2rem;
+}
+
+@media screen and  (max-width: 640px) {
+    .infoDiv{
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        place-items: center;
+    }
+    .infoDiv div{
+        text-align: center;
+        width: 100%;
+    }
+    .nameDiv{
+        flex-direction: column;
+        place-items: start;
+    }
+    .nameDiv section{
+        height: fit-content;
+        word-wrap: break-word;
+    }
+    .dateDiv{
+        flex-direction: column;
+        gap: 0
+    }
 }
