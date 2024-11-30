@@ -1,7 +1,7 @@
 # stockManager
  
 ## 📖 Overview
-Stock Manager is an application designed to help users manage items, similar to a virtual store (non-responsive). 
+Stock Manager is a responsive application designed to help users manage items, similar to a virtual store. 
 
 ## 🚀 Key Features
 It allows the user to:
